@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!. This is 2019.'
 
-@app.route('ask')
+@app.route('/ask')
 def hello_world():
     name = request.values.get("text")
     return f"Hello {name}. Welcome to NCSS 2019 Group 1!"
